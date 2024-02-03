@@ -1,9 +1,11 @@
 services:
   node:
+    image: tamartayar/personal-project:node
     build: ./node
     ports:
       - "3000:3000"
   php:
+    image: tamartayar/personal-project:php
     build: ./php
     ports:
       - "8088:80"
